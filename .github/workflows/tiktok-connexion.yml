@@ -1,0 +1,44 @@
+name: Connecter un compte TikTok
+
+# Échange le code affiché par pharel.cloud/tiktok-callback.html contre les jetons
+# du compte, enregistrés dans Supabase. À lancer dans les minutes qui suivent
+# l'autorisation : le code expire vite et ne sert qu'une fois.
+on:
+  workflow_dispatch:
+    inputs:
+      compte:
+        description: 'Compte à connecter'
+        type: choice
+        required: true
+        options:
+          - happi-web
+          - happi-ia
+          - prordv-pro
+          - prordv-beaute
+          - prordv-barber
+      code:
+        description: 'Code affiché par pharel.cloud/tiktok-callback.html'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  connecter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+      - name: Échanger le code
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          COMPTE: ${{ github.event.inputs.compte }}
+          CODE: ${{ github.event.inputs.code }}
+        run: node auth.js code "$COMPTE" "$CODE"

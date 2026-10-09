@@ -53,6 +53,10 @@ async function main() {
     console.log(`\n✓ Compte ${compteId} connecté (open_id ${jetons.open_id}, scopes : ${jetons.scope}).`);
     if (stocke) {
       console.log('  Jetons enregistrés dans Supabase, l\'agent les renouvellera tout seul.');
+    } else if (process.env.GITHUB_ACTIONS) {
+      // Jamais de jeton dans des logs GitHub : sans Supabase, il faut passer par le PC.
+      console.error('✗ Supabase non configuré : impossible de garder le jeton. Ajoute SUPABASE_URL et SUPABASE_SERVICE_KEY.');
+      process.exit(1);
     } else {
       console.log(`  Supabase non configuré : ajoute ce secret GitHub (il expire dans environ 1 an) :\n`);
       console.log(`  ${nomVariable(compteId)} = ${jetons.refresh_token}\n`);
