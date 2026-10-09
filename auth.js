@@ -36,7 +36,7 @@ async function main() {
   if (action === 'lien' && compteId) {
     verifierCompte(compteId);
     const params = new URLSearchParams({
-      client_key: process.env.TIKTOK_CLIENT_KEY,
+      client_key: identifiantsApp().client_key,
       scope: SCOPES,
       response_type: 'code',
       redirect_uri: REDIRECT_URI,
