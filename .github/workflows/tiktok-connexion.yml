@@ -14,8 +14,6 @@ on:
           - happi-web
           - happi-ia
           - prordv-pro
-          - prordv-beaute
-          - prordv-barber
       code:
         description: 'Code affiché par pharel.cloud/tiktok-callback.html'
         required: true
