@@ -1,0 +1,38 @@
+name: Captures prordv.app
+
+# Filme le site prordv.app (mobile + desktop) chaque lundi pour que les vidéos
+# motion montrent toujours l'application telle qu'elle est.
+on:
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok-agent
+  cancel-in-progress: false
+
+jobs:
+  captures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - run: node captures.js
+      - name: Enregistrer les captures
+        run: |
+          git config user.name "Happi Digital Agent"
+          git config user.email "noreply@happi.digital"
+          git add motion/img/prordv/live
+          git diff --staged --quiet && exit 0
+          git commit -m "captures prordv.app du $(date '+%d/%m/%Y') [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1
