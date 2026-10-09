@@ -33,7 +33,7 @@ Optionnel : `PEXELS_API_KEY` (gratuit sur https://www.pexels.com/api/) pour les 
    - Produits **Login Kit** et **Content Posting API** ;
    - Redirect URI : `https://pharel.cloud/tiktok-callback.html` ;
    - Conditions : `https://pharel.cloud/conditions.html`, confidentialité : `https://pharel.cloud/confidentialite.html` ;
-   - Scopes : `user.info.basic`, `video.upload`, `video.publish`.
+   - Scopes : `user.info.basic`, `video.upload` (ajoute `video.publish` plus tard pour la publication directe, et lance alors `auth.js` avec `TIKTOK_SCOPES=user.info.basic,video.upload,video.publish`).
    - En **Sandbox**, ajoute tes 5 comptes TikTok comme utilisateurs de test pour essayer tout de suite.
 3. Secrets GitHub de ce dépôt : `TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`.
 4. Pour chaque compte, sur ton PC (mêmes variables + `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`) :

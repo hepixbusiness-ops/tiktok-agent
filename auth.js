@@ -16,7 +16,8 @@ const config = require('./accounts.json');
 const { echangerCode, identifiantsApp, nomVariable } = require('./lib/tiktok');
 
 const REDIRECT_URI = process.env.TIKTOK_REDIRECT_URI || 'https://pharel.cloud/tiktok-callback.html';
-const SCOPES = 'user.info.basic,video.upload,video.publish';
+// video.publish (publication directe) seulement si l'app a ce scope : TIKTOK_SCOPES=user.info.basic,video.upload,video.publish
+const SCOPES = process.env.TIKTOK_SCOPES || 'user.info.basic,video.upload';
 
 function verifierCompte(id) {
   if (!config.comptes.some((c) => c.id === id)) {

@@ -76,7 +76,7 @@ La clé service_role donne tous les droits sur la base de ProRDV : elle ne doit 
 4. **Add products** :
    - **Login Kit** → Redirect URI : `https://pharel.cloud/tiktok-callback.html` (exactement, sans `/` final).
    - **Content Posting API** → active aussi **Direct Post** si tu veux la publication 100 % automatique plus tard.
-5. **Scopes** : coche `user.info.basic`, `video.upload`, `video.publish`.
+5. **Scopes** : coche `user.info.basic` et `video.upload`. `video.publish` (publication directe) se demande plus tard, dans une 2e soumission.
 6. Dans la page de l'app, copie **Client key** et **Client secret**.
 7. Secrets GitHub : `TIKTOK_CLIENT_KEY` et `TIKTOK_CLIENT_SECRET`.
 
