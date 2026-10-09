@@ -78,7 +78,7 @@
       "id": "prordv-pro",
       "marque": "ProRDV",
       "handle": "@hepix2",
-      "publication": "inbox",
+      "publication": "direct",
       "voix": "fr-FR-DeniseNeural",
       "images": false,
       "theme": {
