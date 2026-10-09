@@ -67,7 +67,7 @@ const vis=(el,o)=>{el.style.opacity=o.toFixed(3);el.style.visibility=o>0.002?'vi
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 /* « *mot* » = mot en italique couleur accent ; chaque mot devient un .w animable */
 const words=l=>esc(l).split(/(\*[^*]+\*)/).filter(Boolean).map(p=>p.startsWith('*')?p.slice(1,-1).split(' ').map(w=>`<i class="w">${w}</i>`).join(' '):p.trim().split(/\s+/).filter(Boolean).map(w=>`<span class="w">${w}</span>`).join(' ')).join(' ');
-function fit(el,max,min,width){for(let s=max;s>=min;s-=4){el.style.fontSize=s+'px';if(el.scrollWidth<=width)return s;}return min;}
+function fit(el,max,min,width){width=Math.min(width,(el.parentElement&&el.parentElement.clientWidth)||width);for(let s=max;s>=min;s-=4){el.style.fontSize=s+'px';if(el.scrollWidth<=width)return s;}return min;}
 /* entrées / sorties */
 function rise(el,lt,a,o={}){const k=E(R(lt,a,o.d??.5));const op=cl(R(lt,a,.14));const bl=(1-cl(R(lt,a,.2)))*8;vis(el,op);el.style.transform=`translateY(${(1-k)*(o.dy??70)}px)`;el.style.filter=bl>.05?`blur(${bl.toFixed(1)}px)`:'none';}
 function slam(el,lt,a,o={}){const k=SP(R(lt,a,o.d??.32));vis(el,cl(R(lt,a,.06)));el.style.transform=`scale(${L(o.from??1.5,1,k).toFixed(4)})`;}
@@ -83,7 +83,7 @@ function anim(T,lt,a,mode){T.ws.forEach((w,i)=>{const st=a+i*.07;if(mode==='slam
 /* ---------- construction des scènes ---------- */
 const SCN=D.scenes.map((s,i)=>{const el=document.createElement('div');el.className='sc';SC.appendChild(el);const o={s,el,i,dur:s.t1-s.t0};
  if(s.type==='accroche'){o.T=titre(el,s.lignes,0,{cr:true,max:200,min:90});o.T.b.style.top=(860-o.T.h/2)+'px';}
- else if(s.type==='grand'){o.T=titre(el,[s.valeur],0,{cr:true,max:330,min:120});o.T.b.style.top='640px';o.T.ls[0].style.textAlign='center';o.T.b.style.left='60px';o.T.b.style.width='960px';
+ else if(s.type==='grand'){o.T=titre(el,[s.valeur],0,{cr:true,max:280,min:110});o.T.b.style.top='640px';o.T.ls[0].style.textAlign='center';o.T.b.style.left='60px';o.T.b.style.width='960px';
   if(s.label){o.L=titre(el,[s.label],0,{cr:true,max:96,min:56});o.L.b.style.top=(660+o.T.h+20)+'px';}}
  else if(s.type==='telephone'){o.T=titre(el,s.titre,170,{max:130,min:70});
   o.ph=HD.phone(el,{statusBg:s.statusBg||'#ffffff'});const im=document.createElement('img');im.src=s.image;im.style.cssText='position:absolute;left:0;top:0;width:100%;display:block';o.ph.content.appendChild(im);o.im=im;
