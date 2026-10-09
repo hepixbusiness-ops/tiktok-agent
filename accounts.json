@@ -1,0 +1,128 @@
+{
+  "_doc": "Les 5 comptes TikTok. Chaque compte a sa propre audience pour que TikTok ne les traite pas comme des doublons. 'publication' : inbox (tu valides dans l'app), direct (publication auto, app TikTok auditée requise) ou off (vidéo générée seulement, téléchargeable dans GitHub Actions).",
+  "comptes": [
+    {
+      "id": "happi-web",
+      "marque": "Happi Digital",
+      "handle": "@pharel.happi",
+      "publication": "inbox",
+      "voix": "fr-FR-HenriNeural",
+      "images": false,
+      "theme": { "bg": "#17140F", "text": "#FAF8F4", "muted": "#A39B8B", "accent": "#C99A52" },
+      "audience": "Commerçants, restaurants, cliniques, écoles, entreprises BTP et PME au Cameroun (Yaoundé, Douala, Bafoussam) qui n'ont pas encore de site web ou dont le site ne rapporte rien.",
+      "persona": "Pharel Happi, développeur web et consultant digital à Yaoundé. Parle comme un grand frère qui connaît le terrain : direct, concret, chaleureux, jamais condescendant. Tutoie le spectateur.",
+      "piliers": [
+        "Pourquoi une PME camerounaise perd des clients sans site web",
+        "Être visible sur Google et Google Maps quand un client cherche ton activité",
+        "Accepter MTN MoMo et Orange Money directement sur son site",
+        "Combien coûte vraiment un site au Cameroun et ce qui fait varier le prix",
+        "WhatsApp Business bien configuré : les erreurs qui font perdre des ventes",
+        "Les erreurs de site qui font fuir les visiteurs sur mobile",
+        "Ce qu'un restaurant, une clinique, une école ou une boutique doit avoir sur son site",
+        "Page Facebook seule vs vrai site : ce que ça change pour la confiance des clients"
+      ],
+      "cta": "Devis gratuit sur WhatsApp : +237 699 179 254",
+      "lien": "pharel.cloud",
+      "hashtags": ["siteweb", "cameroun", "yaounde", "douala", "entrepreneur", "pme", "digital"]
+    },
+    {
+      "id": "happi-ia",
+      "marque": "Happi Digital",
+      "handle": "@pharel.ia",
+      "publication": "inbox",
+      "voix": "fr-FR-RemyMultilingualNeural",
+      "images": false,
+      "theme": { "bg": "#0D1117", "text": "#EEF1F5", "muted": "#8B95A5", "accent": "#C99A52" },
+      "audience": "Entrepreneurs, freelances, étudiants et petits commerçants d'Afrique francophone qui veulent utiliser l'IA et les outils numériques pour gagner du temps et vendre plus.",
+      "persona": "Pharel, consultant IA basé à Yaoundé. Montre des usages pratiques et testables de l'IA, sans jargon et sans promesse de richesse rapide. Tutoie le spectateur.",
+      "piliers": [
+        "Outils IA gratuits utiles pour un petit business",
+        "Prompts ChatGPT ou Claude prêts à copier pour vendre, répondre aux clients, écrire des posts",
+        "Créer une affiche, un logo ou un visuel avec l'IA, et ses limites",
+        "Automatiser les réponses WhatsApp et la prise de commandes",
+        "Gagner 1 heure par jour avec l'IA quand on gère seul son business",
+        "Ce que l'IA ne remplace pas : les erreurs à éviter",
+        "Utiliser l'IA pour écrire la description de ses produits ou de son menu"
+      ],
+      "cta": "Abonne-toi pour une astuce IA par jour",
+      "lien": "pharel.cloud",
+      "hashtags": ["ia", "chatgpt", "intelligenceartificielle", "entrepreneur", "afrique", "cameroun", "astuce"]
+    },
+    {
+      "id": "prordv-pro",
+      "marque": "ProRDV",
+      "handle": "@prordv",
+      "publication": "inbox",
+      "voix": "fr-FR-DeniseNeural",
+      "images": false,
+      "theme": { "bg": "#140B1F", "text": "#F6F1FB", "muted": "#A595B8", "accent": "#B26BF5" },
+      "audience": "Gérants et gérantes de salons de coiffure, barbiers, instituts de beauté et ongleries en Afrique francophone.",
+      "persona": "Une consultante qui connaît le quotidien des salons : rendez-vous ratés, clientes en retard, cahier de rendez-vous perdu, prix mal fixés. Ton bienveillant et pratique. Tutoie le spectateur.",
+      "piliers": [
+        "Réduire les rendez-vous non honorés (no-shows) avec des rappels automatiques",
+        "Remplacer le cahier de rendez-vous par la réservation en ligne",
+        "Fixer ses prix sans se sous-payer",
+        "Fidéliser ses clientes et les faire revenir",
+        "Organiser son planning et son équipe sans stress",
+        "Se faire trouver par de nouvelles clientes sur internet",
+        "Les erreurs de gestion qui font perdre de l'argent à un salon"
+      ],
+      "cta": "Crée ta page de réservation gratuite sur prordv.app",
+      "lien": "prordv.app",
+      "hashtags": ["salondecoiffure", "coiffeuse", "institutdebeaute", "entrepreneuse", "gestion", "prordv"]
+    },
+    {
+      "id": "prordv-beaute",
+      "marque": "ProRDV",
+      "handle": "@prordv.beaute",
+      "publication": "inbox",
+      "voix": "fr-FR-VivienneMultilingualNeural",
+      "images": true,
+      "theme": { "bg": "#FBF6FF", "text": "#1E1029", "muted": "#6E5A80", "accent": "#7E22CE" },
+      "audience": "Femmes de 18 à 40 ans en Afrique francophone et dans la diaspora qui aiment les coiffures (tresses, locks, tissages, coupes courtes, cheveux naturels), les ongles et les soins.",
+      "persona": "Une amie passionnée de beauté qui partage des idées et des conseils simples. Enthousiaste mais jamais dans l'excès. Tutoie la spectatrice.",
+      "piliers": [
+        "Idées de coiffures tendance (tresses, locks, knotless, nattes collées, coupes courtes)",
+        "Choisir sa coiffure selon la forme de son visage ou l'occasion",
+        "Faire durer ses tresses ou sa coiffure plus longtemps",
+        "Préparer son rendez-vous au salon pour éviter les mauvaises surprises",
+        "Routines simples pour cheveux naturels (conseils généraux, sans promesse médicale)",
+        "Idées d'ongles et de manucure",
+        "Comment bien choisir son salon"
+      ],
+      "cta": "Trouve et réserve ton salon sur prordv.app",
+      "lien": "prordv.app",
+      "hashtags": ["coiffureafro", "tresses", "knotlessbraids", "cheveuxnaturels", "beaute", "prordv"]
+    },
+    {
+      "id": "prordv-barber",
+      "marque": "ProRDV",
+      "handle": "@prordv.barber",
+      "publication": "inbox",
+      "voix": "fr-FR-HenriNeural",
+      "images": true,
+      "theme": { "bg": "#0B0B0D", "text": "#F4F4F5", "muted": "#9A9AA3", "accent": "#B26BF5" },
+      "audience": "Hommes de 16 à 40 ans qui soignent leur style (dégradés, barbe, waves) et barbiers indépendants en Afrique francophone.",
+      "persona": "Un barbier expérimenté qui parle cash et avec humour. Tutoie le spectateur.",
+      "piliers": [
+        "Les coupes et dégradés tendance et à qui ils vont",
+        "Entretenir sa barbe et son contour entre deux passages",
+        "Ce que ton barbier aimerait que tu saches avant de t'asseoir",
+        "Waves, twists et cheveux crépus courts : conseils de base",
+        "Barbiers : remplir son agenda et éviter les clients qui ne viennent pas",
+        "Les erreurs qui ruinent une coupe en une semaine"
+      ],
+      "cta": "Réserve ton barbier sur prordv.app",
+      "lien": "prordv.app",
+      "hashtags": ["barber", "barbershop", "degrade", "coiffurehomme", "barbe", "prordv"]
+    }
+  ],
+  "formats": [
+    { "id": "liste", "consigne": "Une liste numérotée (3 à 5 points) autour du sujet. Le titre de la slide 1 annonce le nombre." },
+    { "id": "erreurs", "consigne": "Les erreurs courantes à éviter, chaque slide = une erreur + ce qu'il faut faire à la place." },
+    { "id": "mythe-realite", "consigne": "Idées reçues démontées : chaque slide oppose une croyance répandue à la réalité." },
+    { "id": "etapes", "consigne": "Un mini-tutoriel étape par étape que le spectateur peut appliquer aujourd'hui." },
+    { "id": "avant-apres", "consigne": "Contraste avant / après : la situation courante, puis ce qui change quand on applique la bonne méthode. Scénario présenté comme un exemple, jamais comme un vrai client." },
+    { "id": "question", "consigne": "Part d'une question que l'audience se pose vraiment et y répond franchement, en nuançant." }
+  ]
+}

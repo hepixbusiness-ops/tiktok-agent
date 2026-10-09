@@ -1,0 +1,20 @@
+{
+  "name": "tiktok-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent TikTok Happi Digital et ProRDV : génération et publication de vidéos slideshow",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js",
+    "test": "node run.js --mock",
+    "auth": "node auth.js"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@napi-rs/canvas": "^1.0.10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

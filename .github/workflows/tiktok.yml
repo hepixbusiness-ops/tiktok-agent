@@ -1,0 +1,89 @@
+name: Happi Digital — Agent TikTok
+
+# 5 passages par jour, 1 vidéo par compte à chaque passage (5 comptes x 5 = 25 vidéos/jour).
+# Heures en UTC ; le Cameroun est en UTC+1. Lancées ~25 min avant 7h, 11h, 14h, 18h et 21h
+# pour absorber le retard de GitHub et le temps de génération.
+on:
+  schedule:
+    - cron: '35 5,9,12,16,19 * * *'
+  workflow_dispatch:
+    inputs:
+      comptes:
+        description: 'Comptes séparés par des virgules (vide = tous)'
+        required: false
+        default: ''
+      nombre:
+        description: 'Vidéos par compte'
+        required: false
+        default: '1'
+      publication:
+        description: 'Forcer le mode : off, inbox ou direct (vide = celui de accounts.json)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok-agent
+  cancel-in-progress: false
+
+jobs:
+  videos:
+    name: Générer et publier
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Installer ffmpeg et edge-tts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          pipx install edge-tts
+
+      - name: Installer les dépendances
+        run: npm install --no-audit --no-fund
+
+      - name: Générer et publier les vidéos
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TIKTOK_COMPTES: ${{ github.event.inputs.comptes }}
+          TIKTOK_NOMBRE: ${{ github.event.inputs.nombre }}
+          TIKTOK_PUBLICATION: ${{ github.event.inputs.publication }}
+        run: node run.js
+
+      - name: Garder les vidéos 7 jours (téléchargeables depuis l'onglet Actions)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-tiktok-${{ github.run_number }}
+          path: out/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Enregistrer l'historique des sujets
+        if: always()
+        run: |
+          git config user.name "Happi Digital Agent"
+          git config user.email "noreply@happi.digital"
+          git add history.json 2>/dev/null || exit 0
+          git diff --staged --quiet && exit 0
+          # [skip ci] : ne pas redéployer le site 5 fois par jour pour un fichier interne.
+          git commit -m "tiktok: historique du $(date '+%d/%m/%Y %H:%M') [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1
