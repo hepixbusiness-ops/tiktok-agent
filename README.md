@@ -6,6 +6,8 @@ Génère et publie des vidéos slideshow (texte animé + voix off) sur 5 comptes
 Les pages exigées par TikTok sont hébergées sur pharel.cloud (dépôt `happi-digital-agent`) :
 `confidentialite.html`, `conditions.html` et `tiktok-callback.html`.
 
+Obtenir chaque clé API pas à pas : [GUIDE_CLES_API.md](GUIDE_CLES_API.md).
+
 ## Ce qu'il fait, 5 fois par jour (`.github/workflows/tiktok.yml`)
 
 1. Écrit un script par compte avec l'IA (Gemini gratuit, sinon Groq, sinon OpenAI), sans refaire un sujet déjà traité (`history.json`).
