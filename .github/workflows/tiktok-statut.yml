@@ -1,0 +1,36 @@
+name: Vérifier un envoi TikTok
+
+# Demande à TikTok où en est une vidéo envoyée (publish_id visible dans history.json).
+on:
+  workflow_dispatch:
+    inputs:
+      compte:
+        description: 'Compte'
+        required: true
+        default: 'prordv-pro'
+      publish_id:
+        description: 'publish_id (dans history.json)'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  statut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+      - name: Interroger TikTok
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          COMPTE: ${{ github.event.inputs.compte }}
+          PUBLISH_ID: ${{ github.event.inputs.publish_id }}
+        run: node status.js "$COMPTE" "$PUBLISH_ID" | tee -a "$GITHUB_STEP_SUMMARY"

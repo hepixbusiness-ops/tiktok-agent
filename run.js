@@ -122,7 +122,9 @@ async function main() {
           ligne.publication = 'non publiée (fichier seulement)';
         } else {
           const r = await publier({ compteId: compte.id, fichier: v.video, legende: v.legende, mode });
-          ligne.publication = r.statut === 'ignore' ? `non publiée : ${r.raison}` : `${r.statut}${r.confidentialite ? ' (' + r.confidentialite + ')' : ''}`;
+          ligne.publication = r.statut === 'ignore'
+            ? `non publiée : ${r.raison}`
+            : `${r.statut}${r.confidentialite ? ' (' + r.confidentialite + ')' : ''}${r.detail ? ' : ' + r.detail : ''}`;
           ligne.publish_id = r.publish_id;
           console.log(`  → ${ligne.publication}`);
         }
