@@ -5,6 +5,12 @@
       "format": "avant-apres",
       "sujet": "Comparer la vente avec une simple page Facebook face à un vrai site web pour une boutique locale",
       "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-09T14:36:26.726Z",
+      "format": "question",
+      "sujet": "Comprendre les vrais prix d'un site web au Cameroun et ce qui justifie les écarts de tarifs",
+      "publication": "non publiée (fichier seulement)"
     }
   ],
   "prordv-pro": [
@@ -12,6 +18,36 @@
       "date": "2026-10-09T14:19:36.162Z",
       "format": "liste",
       "sujet": "Trois erreurs courantes de gestion qui font perdre de l'argent aux salons de coiffure et instituts.",
+      "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-09T14:40:44.373Z",
+      "format": "erreurs",
+      "sujet": "Éviter les erreurs qui compliquent l'organisation du planning et de l'équipe dans un salon",
+      "publication": "non publiée (fichier seulement)"
+    }
+  ],
+  "happi-ia": [
+    {
+      "date": "2026-10-09T14:38:43.927Z",
+      "format": "mythe-realite",
+      "sujet": "Démystifier trois idées reçues courantes sur l'utilisation de l'IA pour vendre sur WhatsApp en Afrique francophone.",
+      "publication": "non publiée (fichier seulement)"
+    }
+  ],
+  "prordv-beaute": [
+    {
+      "date": "2026-10-09T14:42:09.277Z",
+      "format": "avant-apres",
+      "sujet": "Faire durer ses tresses plus longtemps grâce à une routine simple",
+      "publication": "non publiée (fichier seulement)"
+    }
+  ],
+  "prordv-barber": [
+    {
+      "date": "2026-10-09T14:43:25.561Z",
+      "format": "etapes",
+      "sujet": "Entretien rapide de la barbe entre deux rendez-vous",
       "publication": "non publiée (fichier seulement)"
     }
   ]
