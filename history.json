@@ -25,6 +25,13 @@
       "format": "erreurs",
       "sujet": "Éviter les erreurs qui compliquent l'organisation du planning et de l'équipe dans un salon",
       "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-09T15:15:44.261Z",
+      "format": "avant-apres",
+      "sujet": "Remplacer le cahier et les messages WhatsApp par un agenda en ligne",
+      "publication": "envoye-inbox",
+      "publish_id": "v_inbox_file~v2.7694686897051109397"
     }
   ],
   "happi-ia": [
