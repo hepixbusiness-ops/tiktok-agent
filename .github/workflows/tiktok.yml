@@ -20,6 +20,11 @@ on:
         description: 'Forcer le mode : off, inbox ou direct (vide = celui de accounts.json)'
         required: false
         default: ''
+      apercu:
+        description: 'Copier aussi les vidéos sur la branche apercus (pour les voir sans télécharger le zip)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -75,6 +80,23 @@ jobs:
           path: out/
           retention-days: 7
           if-no-files-found: ignore
+
+      - name: Copier les vidéos sur la branche apercus
+        if: ${{ github.event.inputs.apercu == 'true' }}
+        run: |
+          ls out/*.mp4 >/dev/null 2>&1 || exit 0
+          git config user.name "Happi Digital Agent"
+          git config user.email "noreply@happi.digital"
+          if git fetch -q origin apercus 2>/dev/null; then
+            git worktree add -q -b apercus-local /tmp/apercus FETCH_HEAD
+          else
+            git worktree add -q --orphan -b apercus-local /tmp/apercus
+          fi
+          cp out/*.mp4 out/*.txt /tmp/apercus/
+          cd /tmp/apercus
+          git add -A
+          git commit -q -m "aperçus du $(date '+%d/%m/%Y %H:%M') [skip ci]"
+          git push -q origin HEAD:apercus
 
       - name: Enregistrer l'historique des sujets
         if: always()
