@@ -48,11 +48,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Installer ffmpeg et edge-tts
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg > /dev/null
-          pipx install edge-tts
+      # ffmpeg vient du paquet npm ffmpeg-static (apt-get pouvait prendre 10 minutes).
+      - name: Installer edge-tts
+        run: pipx install edge-tts
 
       - name: Installer les dépendances
         run: npm install --no-audit --no-fund
