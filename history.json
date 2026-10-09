@@ -11,6 +11,12 @@
       "format": "question",
       "sujet": "Comprendre les vrais prix d'un site web au Cameroun et ce qui justifie les écarts de tarifs",
       "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-09T21:10:06.836Z",
+      "format": "erreurs",
+      "sujet": "Erreurs fréquentes sur WhatsApp Business qui font perdre des ventes aux PME camerounaises",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -32,6 +38,13 @@
       "sujet": "Remplacer le cahier et les messages WhatsApp par un agenda en ligne",
       "publication": "envoye-inbox",
       "publish_id": "v_inbox_file~v2.7694686897051109397"
+    },
+    {
+      "date": "2026-10-09T21:11:26.416Z",
+      "format": "question",
+      "sujet": "Pourquoi mes clients oublient‑ils leurs rendez‑vous et comment les rappels automatiques aident",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7694778171052443700"
     }
   ],
   "happi-ia": [
@@ -40,6 +53,12 @@
       "format": "mythe-realite",
       "sujet": "Démystifier trois idées reçues courantes sur l'utilisation de l'IA pour vendre sur WhatsApp en Afrique francophone.",
       "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-09T21:10:39.888Z",
+      "format": "etapes",
+      "sujet": "Automatiser les réponses WhatsApp et la prise de commandes avec IA gratuite",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
   "prordv-beaute": [
