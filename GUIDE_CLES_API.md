@@ -52,18 +52,15 @@ Sans cette clé, les comptes beauté et barber utilisent des fonds de couleur un
 
 ## 5. Supabase (gratuit)
 
-Tu utilises déjà le projet `vuzjrsgobeevfqjmsgsm` pour la prospection. On le réutilise.
+Les jetons TikTok sont rangés dans le projet Supabase **`salonpro`** (`xtnroafkontdxzctehzg`), dans la table `tiktok_tokens`. Cette table est déjà créée et totalement séparée de l'app ProRDV : seule la clé service_role peut la lire.
 
-**Créer la table des jetons :**
-1. https://supabase.com/dashboard/project/vuzjrsgobeevfqjmsgsm → **SQL Editor** → **New query**.
-2. Colle le contenu de `supabase.sql` (dans ce dépôt) et clique **Run**.
-
-**Récupérer les clés :**
-1. **Project Settings** → **API** (ou **API Keys**).
-2. `SUPABASE_URL` = l'URL du projet : `https://vuzjrsgobeevfqjmsgsm.supabase.co`.
+1. https://supabase.com/dashboard/project/xtnroafkontdxzctehzg/settings/api (ou **Project Settings → API Keys**).
+2. `SUPABASE_URL` = `https://xtnroafkontdxzctehzg.supabase.co`
 3. `SUPABASE_SERVICE_KEY` = la clé **service_role** (onglet « Legacy API keys » s'il existe), longue et commençant par `eyJ`. Ne prends pas la clé `anon`.
 
-La clé service_role donne tous les droits sur la base : elle ne doit jamais apparaître dans le site ni dans un message.
+La clé service_role donne tous les droits sur la base de ProRDV : elle ne doit jamais apparaître dans le site ni dans un message.
+
+`supabase.sql` reste dans ce dépôt pour recréer la table dans un autre projet si besoin.
 
 ## 6. TikTok (gratuit)
 
@@ -108,7 +105,7 @@ npm install
 
 $env:TIKTOK_CLIENT_KEY="ta_client_key"
 $env:TIKTOK_CLIENT_SECRET="ton_client_secret"
-$env:SUPABASE_URL="https://vuzjrsgobeevfqjmsgsm.supabase.co"
+$env:SUPABASE_URL="https://xtnroafkontdxzctehzg.supabase.co"
 $env:SUPABASE_SERVICE_KEY="ta_cle_service_role"
 
 node auth.js lien happi-web

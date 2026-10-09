@@ -28,7 +28,7 @@ Optionnel : `PEXELS_API_KEY` (gratuit sur https://www.pexels.com/api/) pour les 
 
 ## Brancher TikTok
 
-1. Supabase > SQL Editor : exécute `supabase.sql`.
+1. Supabase : la table `tiktok_tokens` existe déjà dans le projet `salonpro` (sinon, exécute `supabase.sql`).
 2. https://developers.tiktok.com : crée une app avec :
    - Produits **Login Kit** et **Content Posting API** ;
    - Redirect URI : `https://pharel.cloud/tiktok-callback.html` ;
