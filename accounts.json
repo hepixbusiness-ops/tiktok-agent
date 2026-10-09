@@ -153,6 +153,22 @@
             "fichier": "img/prordv/accueil.jpg",
             "statusBg": "#ffffff"
           }
+        ],
+        "metiers": [
+          "Salons de coiffure",
+          "Barbiers",
+          "Spas",
+          "Instituts",
+          "Ongleries",
+          "Salles de sport",
+          "Hôtels",
+          "Restaurants",
+          "Cliniques",
+          "Écoles",
+          "Photographes"
+        ],
+        "desktops": [
+          "img/prordv/accueil-desktop.jpg"
         ]
       }
     }

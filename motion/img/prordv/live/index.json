@@ -19,26 +19,6 @@
       "titre": "Établissements",
       "mobile": "salons-mobile.jpg",
       "desktop": "salons-desktop.jpg"
-    },
-    {
-      "nom": "recherche",
-      "titre": "Recherche",
-      "mobile": "recherche-mobile.jpg",
-      "desktop": "recherche-desktop.jpg"
-    },
-    {
-      "nom": "etablissement-1",
-      "titre": "Page établissement",
-      "lien": "/etablissement/elie-sport-g9hl",
-      "mobile": "etablissement-1-mobile.jpg",
-      "desktop": "etablissement-1-desktop.jpg"
-    },
-    {
-      "nom": "etablissement-2",
-      "titre": "Page établissement",
-      "lien": "/etablissement/az-even-cpmt",
-      "mobile": "etablissement-2-mobile.jpg",
-      "desktop": "etablissement-2-desktop.jpg"
     }
   ]
 }

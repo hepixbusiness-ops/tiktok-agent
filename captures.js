@@ -16,8 +16,10 @@ const PAGES = [
   { nom: 'pro', chemin: '/pro', titre: 'Page pro' },
   { nom: 'accueil', chemin: '/', titre: 'Marketplace' },
   { nom: 'salons', chemin: '/salons', titre: 'Établissements' },
-  { nom: 'recherche', chemin: '/recherche', titre: 'Recherche' },
 ];
+// Les pages des vrais établissements ne sont pas filmées par défaut : contenu non maîtrisé
+// (textes de test) et commerces tiers montrés sans leur accord. CAPTURE_ETABLISSEMENTS=1 pour les activer.
+const AVEC_ETABLISSEMENTS = process.env.CAPTURE_ETABLISSEMENTS === '1';
 const HAUTEUR_MAX = 5200;
 
 async function capturer(navigateur, url, fichierBase) {
@@ -63,7 +65,7 @@ async function main() {
       }
     }
     // jusqu'à 4 pages d'établissements réels, pour montrer des exemples concrets
-    for (const [k, lien] of [...etablissements].slice(0, 4).entries()) {
+    for (const [k, lien] of [...etablissements].slice(0, AVEC_ETABLISSEMENTS ? 4 : 0).entries()) {
       try {
         const { sorties } = await capturer(navigateur, SITE + lien, `etablissement-${k + 1}`);
         index.push({ nom: `etablissement-${k + 1}`, titre: 'Page établissement', lien, ...sorties });
