@@ -99,7 +99,7 @@
         "Votre activité mérite mieux : l'image professionnelle qui donne confiance",
         "Les erreurs d'organisation qui font perdre des clients et de l'argent"
       ],
-      "cta": "Créez votre page de réservation sur prordv.app",
+      "cta": "Commencez gratuitement sur prordv.app",
       "lien": "prordv.app",
       "hashtags": [
         "prordv",
@@ -109,7 +109,52 @@
         "afrique",
         "gestion",
         "pme"
-      ]
+      ],
+      "style": "motion",
+      "faits": [
+        "Réservation en ligne 24h/24, même la nuit : « Votre agenda se remplit pendant que vous dormez »",
+        "Rappels automatiques aux clients, qui réduisent les rendez-vous manqués",
+        "Paiement Mobile Money : MTN MoMo, Orange Money, Wave",
+        "Chaque établissement a sa propre page : prordv.app/votre-nom",
+        "Gratuit pour toujours, sans carte bancaire",
+        "Prêt en 3 minutes",
+        "Pour tous les métiers de la réservation : salons, barbiers, spas, instituts, salles de sport, hôtels, restaurants, cliniques, écoles, photographes",
+        "Marketplace : les clients trouvent les établissements de leur ville sur prordv.app",
+        "Avis clients, galerie photos, horaires et bouton WhatsApp sur la page",
+        "Pensé pour l'Afrique francophone, en français, sur mobile"
+      ],
+      "motion": {
+        "theme": {
+          "clair0": "#ffffff",
+          "clair1": "#f6f0fe",
+          "clair2": "#e7dafa",
+          "sombre0": "#3a1670",
+          "sombre1": "#1d0b38",
+          "sombre2": "#0f0620",
+          "halo": "rgba(167,119,255,.30)",
+          "ink": "#1c1917",
+          "accent": "#7c3aed",
+          "accentClair": "#c4a1ff",
+          "ombre": "rgba(76,29,149,.45)",
+          "ombreForte": "rgba(76,29,149,.6)",
+          "trait": "rgba(124,58,237,.18)",
+          "trait2": "rgba(124,58,237,.25)"
+        },
+        "marqueHtml": "Pro<em>RDV</em>",
+        "logo": "img/prordv/logo.svg",
+        "lien": "prordv.app",
+        "mention": "Gratuit · Prêt en 3 min",
+        "images": [
+          {
+            "fichier": "img/prordv/vitrine-salon.png",
+            "statusBg": "#ffffff"
+          },
+          {
+            "fichier": "img/prordv/accueil.jpg",
+            "statusBg": "#ffffff"
+          }
+        ]
+      }
     }
   ],
   "formats": [

@@ -37,7 +37,7 @@ jobs:
   videos:
     name: Générer et publier
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -50,10 +50,16 @@ jobs:
 
       # ffmpeg vient du paquet npm ffmpeg-static (apt-get pouvait prendre 10 minutes).
       - name: Installer edge-tts
-        run: pipx install edge-tts
+        run: |
+          pipx install edge-tts
+          # module Python pour la voix avec minutage des mots (vidéos motion)
+          python3 -m pip install --user --break-system-packages edge-tts
 
       - name: Installer les dépendances
-        run: npm install --no-audit --no-fund
+        run: |
+          npm install --no-audit --no-fund
+          # Chromium pour les vidéos « motion » (rendu image par image du modèle HTML)
+          npx playwright install --with-deps chromium
 
       - name: Générer et publier les vidéos
         env:

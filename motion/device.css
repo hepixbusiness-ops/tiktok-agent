@@ -1,0 +1,58 @@
+/* Happi Digital — mock-ups génériques (téléphone + navigateur), pilotables par seek(t).
+   Géométrie native : écran téléphone 390 x 891 px (barre d'état 47 + viewport 844), échelle via --s. */
+.hd-rig { position: absolute; left: 0; top: 0; transform-style: preserve-3d; will-change: transform; }
+.hd-shadow { position: absolute; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(92, 52, 22, .42), rgba(120, 70, 30, .18) 55%, rgba(120, 70, 30, 0) 100%);
+  filter: blur(18px); will-change: transform, opacity; }
+
+/* ---------- Téléphone ---------- */
+.hd-phone { --rim: 4px; --bez: 11px; position: relative; width: calc(390px + 2 * (var(--rim) + var(--bez))); height: calc(891px + 2 * (var(--rim) + var(--bez)));
+  transform-style: preserve-3d; }
+.hd-phone .hd-edge { position: absolute; inset: 0; border-radius: 62px;
+  background: linear-gradient(90deg, #6f6a64, #c9c4bc 18%, #8a847c 50%, #d8d3cb 82%, #6a655f); }
+.hd-phone .hd-edge.e1 { transform: translateZ(-3px); } .hd-phone .hd-edge.e2 { transform: translateZ(-6px); }
+.hd-phone .hd-edge.e3 { transform: translateZ(-9px); filter: brightness(.75); }
+.hd-phone .hd-back { position: absolute; inset: 0; border-radius: 62px; transform: translateZ(-10px); background: #2a2622; }
+.hd-phone .hd-rimface { position: absolute; inset: 0; border-radius: 62px;
+  background: conic-gradient(from 210deg, #f4efe7, #9b958c 12%, #e9e4dc 25%, #7d776f 38%, #f1ece4 50%, #8f8980 63%, #ece7df 76%, #78726a 88%, #f4efe7);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .55), inset 0 0 0 2px rgba(0, 0, 0, .25); }
+.hd-phone .hd-bezel { position: absolute; inset: var(--rim); border-radius: 58px; background: #0b0b0c;
+  box-shadow: inset 0 0 0 1.5px #1d1d1f, inset 0 0 6px rgba(0, 0, 0, .9); }
+.hd-phone .hd-screen { position: absolute; inset: calc(var(--rim) + var(--bez)); border-radius: 47px; overflow: hidden; background: var(--hd-status-bg, #fff);
+  transform: translateZ(.5px); -webkit-mask-image: -webkit-radial-gradient(white, black); isolation: isolate; }
+.hd-phone .hd-status { position: absolute; left: 0; right: 0; top: 0; height: 47px; display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 30px 0 44px; box-sizing: border-box; color: var(--hd-status-fg, #111); background: var(--hd-status-bg, #fff);
+  font: 600 16px/1 -apple-system, "SF Pro Text", Inter, "Helvetica Neue", Arial, sans-serif; letter-spacing: -.01em; z-index: 3; }
+.hd-phone .hd-status svg { display: block; fill: currentColor; }
+.hd-phone .hd-status .hd-icons { display: flex; gap: 6px; align-items: center; }
+.hd-phone .hd-content { position: absolute; left: 0; right: 0; top: 47px; bottom: 0; overflow: hidden; background: #fff; }
+.hd-phone.hd-overlay-status .hd-content { top: 0; }
+.hd-phone .hd-content > img, .hd-phone .hd-content > video, .hd-phone .hd-content > canvas { position: absolute; left: 0; top: 0; width: 100%; height: auto; display: block; }
+.hd-phone .hd-island { position: absolute; top: 11px; left: 50%; width: 122px; height: 35px; margin-left: -61px; border-radius: 20px; background: #000; z-index: 4;
+  box-shadow: inset 0 0 0 1px #111; }
+.hd-phone .hd-island::after { content: ""; position: absolute; right: 13px; top: 10px; width: 15px; height: 15px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #3b4a66, #0d1220 60%, #000); }
+.hd-phone .hd-homebar { position: absolute; bottom: 8px; left: 50%; width: 134px; height: 5px; margin-left: -67px; border-radius: 3px; background: rgba(0, 0, 0, .78); z-index: 4; }
+.hd-phone .hd-glare { position: absolute; inset: 0; z-index: 5; pointer-events: none; border-radius: 47px; mix-blend-mode: screen;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0) calc(var(--g, .3) * 100% - 22%), rgba(255, 255, 255, .16) calc(var(--g, .3) * 100% - 6%),
+    rgba(255, 255, 255, .05) calc(var(--g, .3) * 100% + 4%), rgba(255, 255, 255, 0) calc(var(--g, .3) * 100% + 18%)); }
+.hd-phone .hd-btn { position: absolute; width: 5px; border-radius: 2px; background: linear-gradient(90deg, #5d5852, #cfc9c0 45%, #7c766e); transform: translateZ(-5px); }
+.hd-phone .hd-btn.l { left: -3px; } .hd-phone .hd-btn.r { right: -3px; }
+.hd-phone .hd-tap { position: absolute; z-index: 6; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, .55) 0 38%, rgba(255, 255, 255, .25) 39% 60%, rgba(255, 255, 255, 0) 61%);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .85), 0 4px 18px rgba(0, 0, 0, .25); }
+
+/* ---------- Navigateur ---------- */
+.hd-browser { position: relative; width: var(--bw, 1152px); border-radius: 14px; overflow: hidden; background: #fbfaf8;
+  box-shadow: 0 0 0 1px rgba(60, 40, 20, .12), 0 2px 4px rgba(60, 40, 20, .06); transform-style: flat; }
+.hd-browser .hd-bar { height: 46px; display: flex; align-items: center; gap: 14px; padding: 0 16px; background: linear-gradient(#f4f1ec, #ece8e2); border-bottom: 1px solid rgba(60, 40, 20, .1); }
+.hd-browser .hd-dots { display: flex; gap: 7px; } .hd-browser .hd-dots i { width: 11px; height: 11px; border-radius: 50%; background: #cfc8bf; display: block; }
+.hd-browser .hd-nav { display: flex; gap: 10px; color: #9a9186; font: 500 15px/1 Inter, Arial, sans-serif; }
+.hd-browser .hd-url { flex: 1; max-width: 520px; margin: 0 auto; height: 28px; border-radius: 8px; background: #fff; box-shadow: inset 0 0 0 1px rgba(60, 40, 20, .1);
+  display: flex; align-items: center; justify-content: center; gap: 7px; color: #4a4038; font: 500 13.5px/1 Inter, Arial, sans-serif; letter-spacing: .01em; }
+.hd-browser .hd-url svg { width: 12px; height: 12px; fill: #8a8075; }
+.hd-browser .hd-spacer { width: 60px; }
+.hd-browser .hd-content { position: relative; width: 100%; aspect-ratio: 1440 / 900; overflow: hidden; background: #fff; }
+.hd-browser .hd-content > img, .hd-browser .hd-content > video { position: absolute; left: 0; top: 0; width: 100%; height: auto; display: block; }
+.hd-browser .hd-glare { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0) calc(var(--g, .3) * 100% - 20%), rgba(255, 255, 255, .10) calc(var(--g, .3) * 100%), rgba(255, 255, 255, 0) calc(var(--g, .3) * 100% + 20%)); }

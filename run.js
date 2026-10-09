@@ -17,6 +17,7 @@ const { ecrireScript, scriptDeTest } = require('./lib/script');
 const { dessinerSlide } = require('./lib/render');
 const { voixOff, dureeAudio, dureeLecture, photoPexels, monter } = require('./lib/media');
 const { publier } = require('./lib/tiktok');
+const { produireMotion } = require('./lib/motion');
 
 const RACINE = __dirname;
 const HISTORIQUE = path.join(RACINE, 'history.json');
@@ -62,6 +63,7 @@ function horodatage() {
 }
 
 async function produireVideo(compte, format, sujetsRecents, opts) {
+  if (compte.style === 'motion') return produireVideoMotion(compte, format, sujetsRecents, opts);
   const script = opts.mock ? scriptDeTest(compte, format) : await ecrireScript(compte, format, sujetsRecents);
   const nom = `${compte.id}_${horodatage()}`;
   const dossier = path.join(SORTIE, nom);
@@ -92,6 +94,18 @@ async function produireVideo(compte, format, sujetsRecents, opts) {
 
   const duree = pistes.reduce((s, p) => s + p.duree, 0);
   return { script, video, legende, duree, avecVoix, nom };
+}
+
+async function produireVideoMotion(compte, format, sujetsRecents, opts) {
+  const nom = `${compte.id}_${horodatage()}`;
+  const dossier = path.join(SORTIE, nom);
+  fs.mkdirSync(dossier, { recursive: true });
+  const video = path.join(SORTIE, `${nom}.mp4`);
+  const r = await produireMotion(compte, format, sujetsRecents, opts, dossier, video);
+  const legende = `${r.script.legende}\n\n${r.script.hashtags.map((h) => '#' + h).join(' ')}`.trim();
+  fs.writeFileSync(path.join(SORTIE, `${nom}.txt`), legende + '\n');
+  fs.rmSync(dossier, { recursive: true, force: true });
+  return { script: r.script, video, legende, duree: r.duree, avecVoix: r.avecVoix, nom };
 }
 
 async function main() {
