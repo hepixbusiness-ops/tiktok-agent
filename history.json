@@ -17,6 +17,12 @@
       "format": "erreurs",
       "sujet": "Erreurs fréquentes sur WhatsApp Business qui font perdre des ventes aux PME camerounaises",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-10T11:21:10.142Z",
+      "format": "etapes",
+      "sujet": "Comment inscrire son commerce sur Google Maps gratuitement pour que les clients du quartier vous trouvent",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -69,6 +75,13 @@
       "format": "liste",
       "sujet": "Être trouvé en ligne par de nouveaux clients dans votre ville",
       "publication": "non publiée (fichier seulement)"
+    },
+    {
+      "date": "2026-10-10T11:25:38.892Z",
+      "format": "question",
+      "sujet": "Votre présence en ligne donne-t-elle vraiment confiance à vos clients ?",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7694998438689327125"
     }
   ],
   "happi-ia": [
@@ -82,6 +95,12 @@
       "date": "2026-10-09T21:10:39.888Z",
       "format": "etapes",
       "sujet": "Automatiser les réponses WhatsApp et la prise de commandes avec IA gratuite",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-10T11:22:04.422Z",
+      "format": "liste",
+      "sujet": "Trois prompts ChatGPT simples pour rédiger des descriptions de produits vendeuses sur WhatsApp.",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
