@@ -8,7 +8,7 @@
  *   node run.js --sans-publier        génère sans envoyer à TikTok
  *   node run.js --mock                script de test, sans clé IA
  *
- * Variable TIKTOK_PUBLICATION=off|inbox|direct : force le mode pour tous les comptes.
+ * Variable TIKTOK_PUBLICATION=off|inbox|direct|validation : force le mode pour tous les comptes.
  */
 const fs = require('fs');
 const path = require('path');
@@ -18,6 +18,7 @@ const { dessinerSlide } = require('./lib/render');
 const { voixOff, dureeAudio, dureeLecture, photoPexels, monter } = require('./lib/media');
 const { publier } = require('./lib/tiktok');
 const { produireMotion } = require('./lib/motion');
+const { mettreEnFile } = require('./lib/file');
 
 const RACINE = __dirname;
 const HISTORIQUE = path.join(RACINE, 'history.json');
@@ -135,7 +136,9 @@ async function main() {
         if (opts.sansPublier || opts.mock || mode === 'off') {
           ligne.publication = 'non publiée (fichier seulement)';
         } else {
-          const r = await publier({ compteId: compte.id, fichier: v.video, legende: v.legende, mode });
+          const r = mode === 'validation'
+            ? await mettreEnFile({ compteId: compte.id, fichier: v.video, legende: v.legende, sujet: v.script.sujet })
+            : await publier({ compteId: compte.id, fichier: v.video, legende: v.legende, mode });
           ligne.publication = r.statut === 'ignore'
             ? `non publiée : ${r.raison}`
             : `${r.statut}${r.confidentialite ? ' (' + r.confidentialite + ')' : ''}${r.detail ? ' : ' + r.detail : ''}`;

@@ -17,7 +17,7 @@ on:
         required: false
         default: '1'
       publication:
-        description: 'Forcer le mode : off, inbox ou direct (vide = celui de accounts.json)'
+        description: 'Forcer le mode : off, inbox, direct ou validation (vide = celui de accounts.json)'
         required: false
         default: ''
       apercu:
