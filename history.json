@@ -29,6 +29,12 @@
       "format": "mythe-realite",
       "sujet": "Mythes et réalités sur l'encaissement par MTN MoMo et Orange Money sur un site web au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-10T22:52:55.032Z",
+      "format": "liste",
+      "sujet": "Quatre erreurs fréquentes sur mobile qui font fuir les visiteurs d'un site web au Cameroun",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -95,6 +101,13 @@
       "sujet": "Créer son propre site web de réservation professionnel sans coder",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695092839964936210"
+    },
+    {
+      "date": "2026-10-10T22:56:28.725Z",
+      "format": "avant-apres",
+      "sujet": "Le contraste avant et après la mise en place d'une page de réservation en ligne pour son établissement",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7695176132979361793"
     }
   ],
   "happi-ia": [
@@ -120,6 +133,12 @@
       "date": "2026-10-10T17:28:18.914Z",
       "format": "question",
       "sujet": "L'IA peut-elle vraiment créer le logo d'un business gratuitement et sans graphiste ?",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-10T22:53:41.483Z",
+      "format": "avant-apres",
+      "sujet": "Avant/Après : planifier ses publications de la semaine en dix minutes avec ChatGPT au lieu de bloquer pendant des heures.",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
