@@ -35,6 +35,12 @@
       "format": "liste",
       "sujet": "Quatre erreurs fréquentes sur mobile qui font fuir les visiteurs d'un site web au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-11T11:33:58.916Z",
+      "format": "question",
+      "sujet": "Pourquoi une PME camerounaise perd des clients sans site web",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -108,6 +114,13 @@
       "sujet": "Le contraste avant et après la mise en place d'une page de réservation en ligne pour son établissement",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695176132979361793"
+    },
+    {
+      "date": "2026-10-11T11:38:20.248Z",
+      "format": "etapes",
+      "sujet": "Une page ProRDV adaptée à chaque métier",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7695372785140549650"
     }
   ],
   "happi-ia": [
@@ -139,6 +152,12 @@
       "date": "2026-10-10T22:53:41.483Z",
       "format": "avant-apres",
       "sujet": "Avant/Après : planifier ses publications de la semaine en dix minutes avec ChatGPT au lieu de bloquer pendant des heures.",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-11T11:34:26.445Z",
+      "format": "erreurs",
+      "sujet": "Erreurs courantes à éviter quand on crée des visuels avec l'IA pour un petit business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
