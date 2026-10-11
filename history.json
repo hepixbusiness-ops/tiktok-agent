@@ -41,6 +41,12 @@
       "format": "question",
       "sujet": "Pourquoi une PME camerounaise perd des clients sans site web",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-11T17:46:52.199Z",
+      "format": "avant-apres",
+      "sujet": "Avant et après pour un restaurant qui passe du menu en photo WhatsApp à un vrai menu en ligne",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -121,6 +127,13 @@
       "sujet": "Une page ProRDV adaptée à chaque métier",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695372785140549650"
+    },
+    {
+      "date": "2026-10-11T17:51:33.838Z",
+      "format": "mythe-realite",
+      "sujet": "Démonter le mythe selon lequel les clients préfèrent appeler ou envoyer un message pour réserver",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7695468779329783809"
     }
   ],
   "happi-ia": [
@@ -158,6 +171,12 @@
       "date": "2026-10-11T11:34:26.445Z",
       "format": "erreurs",
       "sujet": "Erreurs courantes à éviter quand on crée des visuels avec l'IA pour un petit business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-11T17:47:25.980Z",
+      "format": "mythe-realite",
+      "sujet": "Trois mythes courants sur l'utilisation de ChatGPT quand on gère seul son business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
