@@ -59,6 +59,12 @@
       "format": "erreurs",
       "sujet": "Page Facebook seule vs vrai site : impact sur la confiance client",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-12T23:10:52.289Z",
+      "format": "etapes",
+      "sujet": "Éléments indispensables à mettre sur le site d’un commerce au Cameroun",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -160,6 +166,13 @@
       "sujet": "Une image professionnelle qui inspire confiance grâce à ProRDV",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695775046182766612"
+    },
+    {
+      "date": "2026-10-12T23:14:12.991Z",
+      "format": "question",
+      "sujet": "Comment continuer à recevoir des réservations quand votre établissement est fermé ?",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7695923252686571526"
     }
   ],
   "happi-ia": [
@@ -215,6 +228,12 @@
       "date": "2026-10-12T13:36:40.525Z",
       "format": "liste",
       "sujet": "Gagner une heure par jour grâce à des outils IA simples pour les solos du business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-12T23:11:10.830Z",
+      "format": "mythe-realite",
+      "sujet": "Mythe vs réalité sur les outils IA gratuits pour les petits business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
