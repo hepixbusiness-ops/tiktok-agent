@@ -53,6 +53,12 @@
       "format": "avant-apres",
       "sujet": "Avant et après pour une clinique ou cabinet médical qui met en place un site web clair",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-12T13:36:25.915Z",
+      "format": "erreurs",
+      "sujet": "Page Facebook seule vs vrai site : impact sur la confiance client",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -147,6 +153,13 @@
       "sujet": "Les erreurs qui bloquent vos réservations et comment les corriger",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695552183827187719"
+    },
+    {
+      "date": "2026-10-12T13:38:36.502Z",
+      "format": "liste",
+      "sujet": "Une image professionnelle qui inspire confiance grâce à ProRDV",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7695775046182766612"
     }
   ],
   "happi-ia": [
@@ -196,6 +209,12 @@
       "date": "2026-10-11T23:08:55.231Z",
       "format": "etapes",
       "sujet": "Nettoyer et professionnaliser ses photos produits pour WhatsApp en trois étapes avec une IA gratuite",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-12T13:36:40.525Z",
+      "format": "liste",
+      "sujet": "Gagner une heure par jour grâce à des outils IA simples pour les solos du business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
