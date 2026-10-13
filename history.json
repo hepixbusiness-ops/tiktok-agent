@@ -65,6 +65,12 @@
       "format": "etapes",
       "sujet": "Éléments indispensables à mettre sur le site d’un commerce au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-13T12:55:46.201Z",
+      "format": "mythe-realite",
+      "sujet": "Trois idées reçues qui empêchent les PME camerounaises de lancer leur site web",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -173,6 +179,13 @@
       "sujet": "Comment continuer à recevoir des réservations quand votre établissement est fermé ?",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7695923252686571526"
+    },
+    {
+      "date": "2026-10-13T13:00:50.226Z",
+      "format": "mythe-realite",
+      "sujet": "Réservations nocturnes : mythe ou réalité",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7696136466476550164"
     }
   ],
   "happi-ia": [
@@ -234,6 +247,12 @@
       "date": "2026-10-12T23:11:10.830Z",
       "format": "mythe-realite",
       "sujet": "Mythe vs réalité sur les outils IA gratuits pour les petits business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-13T12:56:16.257Z",
+      "format": "question",
+      "sujet": "Ce que l'IA ne peut pas remplacer dans la gestion d’un petit business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
