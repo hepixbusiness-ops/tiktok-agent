@@ -71,6 +71,12 @@
       "format": "mythe-realite",
       "sujet": "Trois idées reçues qui empêchent les PME camerounaises de lancer leur site web",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-13T21:32:34.528Z",
+      "format": "liste",
+      "sujet": "Quatre informations indispensables à afficher sur le site web d'une école privée au Cameroun",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -186,6 +192,13 @@
       "sujet": "Réservations nocturnes : mythe ou réalité",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7696136466476550164"
+    },
+    {
+      "date": "2026-10-13T21:41:41.988Z",
+      "format": "avant-apres",
+      "sujet": "Le contraste entre la gestion manuelle par message et la réservation automatique en ligne",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7696270623115773973"
     }
   ],
   "happi-ia": [
@@ -253,6 +266,12 @@
       "date": "2026-10-13T12:56:16.257Z",
       "format": "question",
       "sujet": "Ce que l'IA ne peut pas remplacer dans la gestion d’un petit business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-13T21:37:38.640Z",
+      "format": "avant-apres",
+      "sujet": "Avant/Après : répondre à la demande de rabais sur WhatsApp avec un prompt ChatGPT",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
