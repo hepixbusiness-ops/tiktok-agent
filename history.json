@@ -89,6 +89,12 @@
       "format": "etapes",
       "sujet": "Comment accepter MTN MoMo et Orange Money directement sur son site web",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-14T22:33:02.579Z",
+      "format": "avant-apres",
+      "sujet": "Avant et après pour une entreprise BTP ou de rénovation qui présente ses chantiers en ligne",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -218,6 +224,13 @@
       "sujet": "Comment lancer sa page de réservation en ligne étape par étape",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7696471293008529460"
+    },
+    {
+      "date": "2026-10-14T22:37:24.437Z",
+      "format": "erreurs",
+      "sujet": "Trois erreurs de prise de rendez-vous qui font fuir vos clients et comment les corriger",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7696655668983613448"
     }
   ],
   "happi-ia": [
@@ -303,6 +316,12 @@
       "date": "2026-10-14T17:32:41.828Z",
       "format": "erreurs",
       "sujet": "Erreurs courantes à éviter quand on utilise des prompts IA pour son petit business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-14T22:33:49.545Z",
+      "format": "etapes",
+      "sujet": "Créer un menu ou catalogue WhatsApp clair et vendeur avec ChatGPT en 4 étapes",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
