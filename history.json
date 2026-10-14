@@ -83,6 +83,12 @@
       "format": "question",
       "sujet": "Faut-il obligatoirement une boutique e-commerce avec panier pour vendre en ligne au Cameroun ?",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-14T17:32:06.626Z",
+      "format": "etapes",
+      "sujet": "Comment accepter MTN MoMo et Orange Money directement sur son site web",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -291,6 +297,12 @@
       "date": "2026-10-14T10:34:07.495Z",
       "format": "erreurs",
       "sujet": "Trois erreurs courantes qui font fuir les clients quand ChatGPT écrit tes messages de vente",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-14T17:32:41.828Z",
+      "format": "erreurs",
+      "sujet": "Erreurs courantes à éviter quand on utilise des prompts IA pour son petit business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
