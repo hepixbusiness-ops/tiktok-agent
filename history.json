@@ -101,6 +101,12 @@
       "format": "erreurs",
       "sujet": "Trois erreurs courantes sur le site web d'une PME camerounaise qui empêchent de convertir les visiteurs en clients",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-15T17:21:27.932Z",
+      "format": "etapes",
+      "sujet": "Mise en place d'un système de réservation en ligne simple pour un restaurant",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -244,6 +250,13 @@
       "sujet": "Trois outils indispensables réunis sur votre site de réservation",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7696837061122377745"
+    },
+    {
+      "date": "2026-10-15T17:25:53.195Z",
+      "format": "avant-apres",
+      "sujet": "Être trouvé en ligne par de nouveaux clients dans votre ville",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7696946734589822994"
     }
   ],
   "happi-ia": [
@@ -341,6 +354,12 @@
       "date": "2026-10-15T10:16:02.098Z",
       "format": "liste",
       "sujet": "Trois outils IA gratuits à installer sur son téléphone pour gérer un petit business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-15T17:21:59.834Z",
+      "format": "mythe-realite",
+      "sujet": "Affiche IA gratuite : mythes vs réalités pour petit business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
