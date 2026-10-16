@@ -125,6 +125,12 @@
       "format": "question",
       "sujet": "Comment rendre son commerce visible sur Google et Google Maps pour attirer les clients locaux",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-16T22:11:54.249Z",
+      "format": "mythe-realite",
+      "sujet": "Mythe vs réalité : accepter MTN MoMo et Orange Money directement sur son site web",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -282,6 +288,13 @@
       "sujet": "Faut-il dépenser une fortune pour avoir son propre site de réservation ?",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697028322488010772"
+    },
+    {
+      "date": "2026-10-16T22:20:37.846Z",
+      "format": "mythe-realite",
+      "sujet": "Déconstruire les idées reçues sur la réservation en ligne pour les établissements",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697393595925596168"
     }
   ],
   "happi-ia": [
@@ -403,6 +416,12 @@
       "date": "2026-10-16T16:55:08.000Z",
       "format": "etapes",
       "sujet": "Prompt prêt‑à‑copier pour répondre aux clients et vendre via ChatGPT ou Claude",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-16T22:12:19.883Z",
+      "format": "erreurs",
+      "sujet": "Erreurs à éviter avec les prompts IA pour vendre, répondre aux clients et créer des posts",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
