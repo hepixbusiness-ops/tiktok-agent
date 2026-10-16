@@ -119,6 +119,12 @@
       "format": "liste",
       "sujet": "Trois types de clients qu'une PME camerounaise perd chaque jour sans site web",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-16T16:54:22.733Z",
+      "format": "question",
+      "sujet": "Comment rendre son commerce visible sur Google et Google Maps pour attirer les clients locaux",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -391,6 +397,12 @@
       "date": "2026-10-16T10:05:18.058Z",
       "format": "avant-apres",
       "sujet": "Outils IA gratuits utiles pour un petit business",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-16T16:55:08.000Z",
+      "format": "etapes",
+      "sujet": "Prompt prêt‑à‑copier pour répondre aux clients et vendre via ChatGPT ou Claude",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
