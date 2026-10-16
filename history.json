@@ -113,6 +113,12 @@
       "format": "mythe-realite",
       "sujet": "Mythes et réalités sur la recherche Google pour les entreprises au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-16T10:04:39.305Z",
+      "format": "liste",
+      "sujet": "Trois types de clients qu'une PME camerounaise perd chaque jour sans site web",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -379,6 +385,12 @@
       "date": "2026-10-15T22:40:08.123Z",
       "format": "question",
       "sujet": "L'IA peut-elle gérer les réclamations et clients mécontents sur WhatsApp sans faire d'erreurs ?",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-16T10:05:18.058Z",
+      "format": "avant-apres",
+      "sujet": "Outils IA gratuits utiles pour un petit business",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
