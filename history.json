@@ -131,6 +131,12 @@
       "format": "mythe-realite",
       "sujet": "Mythe vs réalité : accepter MTN MoMo et Orange Money directement sur son site web",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-17T09:38:08.212Z",
+      "format": "avant-apres",
+      "sujet": "Avant et après pour une boutique locale qui remplace l'envoi manuel de photos par un catalogue web connecté à WhatsApp",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -295,6 +301,13 @@
       "sujet": "Déconstruire les idées reçues sur la réservation en ligne pour les établissements",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697393595925596168"
+    },
+    {
+      "date": "2026-10-17T09:43:15.620Z",
+      "format": "avant-apres",
+      "sujet": "Le passage des réservations lentes par message à un site de réservation immédiat",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697569761844021264"
     }
   ],
   "happi-ia": [
@@ -422,6 +435,12 @@
       "date": "2026-10-16T22:12:19.883Z",
       "format": "erreurs",
       "sujet": "Erreurs à éviter avec les prompts IA pour vendre, répondre aux clients et créer des posts",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-17T09:38:57.459Z",
+      "format": "avant-apres",
+      "sujet": "Avant/Après : relancer un client silencieux sur WhatsApp après avoir donné le prix grâce à ChatGPT",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
