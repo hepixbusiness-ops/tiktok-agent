@@ -149,6 +149,12 @@
       "format": "etapes",
       "sujet": "Configurer son message d'absence WhatsApp Business en trois étapes pour ne plus perdre les clients qui écrivent la nuit",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-17T21:41:02.071Z",
+      "format": "question",
+      "sujet": "Est-ce utile d'avoir un site web si tous ses clients commandent déjà sur WhatsApp ?",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -334,6 +340,13 @@
       "sujet": "Les erreurs de planification courantes qui font perdre des réservations",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697712162579712016"
+    },
+    {
+      "date": "2026-10-17T21:45:57.912Z",
+      "format": "liste",
+      "sujet": "Trois atouts indispensables pour développer les réservations de son établissement",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697755734569748501"
     }
   ],
   "happi-ia": [
@@ -479,6 +492,12 @@
       "date": "2026-10-17T18:47:54.580Z",
       "format": "mythe-realite",
       "sujet": "Mythes et réalités sur la rédaction de descriptions de produits avec l'IA pour vendre sur WhatsApp",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-17T21:41:43.960Z",
+      "format": "question",
+      "sujet": "L'IA peut-elle vraiment trouver des clients à la place d'un petit commerçant ?",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
