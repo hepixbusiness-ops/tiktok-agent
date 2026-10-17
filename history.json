@@ -143,6 +143,12 @@
       "format": "erreurs",
       "sujet": "Trois erreurs fréquentes à éviter lors du lancement de son premier site web d'entreprise au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-17T18:46:36.496Z",
+      "format": "etapes",
+      "sujet": "Configurer son message d'absence WhatsApp Business en trois étapes pour ne plus perdre les clients qui écrivent la nuit",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -321,6 +327,13 @@
       "sujet": "Comment lancer son système de réservation en ligne en trois minutes",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697665379501688884"
+    },
+    {
+      "date": "2026-10-17T18:55:58.367Z",
+      "format": "erreurs",
+      "sujet": "Les erreurs de planification courantes qui font perdre des réservations",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697712162579712016"
     }
   ],
   "happi-ia": [
@@ -460,6 +473,12 @@
       "date": "2026-10-17T15:53:36.935Z",
       "format": "liste",
       "sujet": "Trois tâches du quotidien commercial à confier à ChatGPT chaque matin pour gagner du temps",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-17T18:47:54.580Z",
+      "format": "mythe-realite",
+      "sujet": "Mythes et réalités sur la rédaction de descriptions de produits avec l'IA pour vendre sur WhatsApp",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
