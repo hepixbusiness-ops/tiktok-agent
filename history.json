@@ -137,6 +137,12 @@
       "format": "avant-apres",
       "sujet": "Avant et après pour une boutique locale qui remplace l'envoi manuel de photos par un catalogue web connecté à WhatsApp",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-17T15:52:52.234Z",
+      "format": "erreurs",
+      "sujet": "Trois erreurs fréquentes à éviter lors du lancement de son premier site web d'entreprise au Cameroun",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -308,6 +314,13 @@
       "sujet": "Le passage des réservations lentes par message à un site de réservation immédiat",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697569761844021264"
+    },
+    {
+      "date": "2026-10-17T15:56:08.692Z",
+      "format": "etapes",
+      "sujet": "Comment lancer son système de réservation en ligne en trois minutes",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697665379501688884"
     }
   ],
   "happi-ia": [
@@ -441,6 +454,12 @@
       "date": "2026-10-17T09:38:57.459Z",
       "format": "avant-apres",
       "sujet": "Avant/Après : relancer un client silencieux sur WhatsApp après avoir donné le prix grâce à ChatGPT",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-17T15:53:36.935Z",
+      "format": "liste",
+      "sujet": "Trois tâches du quotidien commercial à confier à ChatGPT chaque matin pour gagner du temps",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
