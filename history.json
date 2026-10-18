@@ -167,6 +167,12 @@
       "format": "erreurs",
       "sujet": "Trois erreurs fréquentes sur une fiche Google Maps qui font fuir les clients au Cameroun et comment les corriger",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-18T18:51:14.431Z",
+      "format": "mythe-realite",
+      "sujet": "Mythes et réalités sur la gestion quotidienne d'un site web pour une PME au Cameroun",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -373,6 +379,13 @@
       "sujet": "Vos clients attendent-ils trop longtemps avant d'obtenir un rendez-vous ?",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7698040385075218484"
+    },
+    {
+      "date": "2026-10-18T18:55:52.626Z",
+      "format": "mythe-realite",
+      "sujet": "Démonter le mythe des rendez-vous oubliés et des clients absents",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7698083183463663632"
     }
   ],
   "happi-ia": [
@@ -536,6 +549,12 @@
       "date": "2026-10-18T16:06:57.187Z",
       "format": "etapes",
       "sujet": "Créer une affiche promotionnelle nette pour statut WhatsApp en trois étapes avec l'IA et Canva",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-18T18:52:04.022Z",
+      "format": "erreurs",
+      "sujet": "Trois erreurs courantes lors de l'automatisation des commandes WhatsApp avec l'IA et comment les corriger",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
