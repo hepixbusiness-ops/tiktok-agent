@@ -173,6 +173,12 @@
       "format": "mythe-realite",
       "sujet": "Mythes et réalités sur la gestion quotidienne d'un site web pour une PME au Cameroun",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-18T21:45:42.182Z",
+      "format": "avant-apres",
+      "sujet": "Avant et après pour un prestataire événementiel ou traiteur qui présente ses formules sur un site web plutôt que par messages dispersés",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -386,6 +392,13 @@
       "sujet": "Démonter le mythe des rendez-vous oubliés et des clients absents",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7698083183463663632"
+    },
+    {
+      "date": "2026-10-18T21:50:29.225Z",
+      "format": "avant-apres",
+      "sujet": "Le contraste entre les allers-retours épuisants par message et la confirmation automatique de rendez-vous",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7698127671432022017"
     }
   ],
   "happi-ia": [
@@ -555,6 +568,12 @@
       "date": "2026-10-18T18:52:04.022Z",
       "format": "erreurs",
       "sujet": "Trois erreurs courantes lors de l'automatisation des commandes WhatsApp avec l'IA et comment les corriger",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-18T21:46:50.197Z",
+      "format": "avant-apres",
+      "sujet": "Avant/Après : transformer un statut WhatsApp flou en fiche produit vendeuse avec ChatGPT",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
