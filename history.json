@@ -161,6 +161,12 @@
       "format": "liste",
       "sujet": "Quatre éléments indispensables sur le site web d'un restaurant au Cameroun pour rassurer les clients",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-18T16:06:18.888Z",
+      "format": "erreurs",
+      "sujet": "Trois erreurs fréquentes sur une fiche Google Maps qui font fuir les clients au Cameroun et comment les corriger",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -360,6 +366,13 @@
       "sujet": "Trois outils indispensables pour moderniser la prise de rendez-vous de son établissement",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697944895834769409"
+    },
+    {
+      "date": "2026-10-18T16:10:39.007Z",
+      "format": "question",
+      "sujet": "Vos clients attendent-ils trop longtemps avant d'obtenir un rendez-vous ?",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7698040385075218484"
     }
   ],
   "happi-ia": [
@@ -517,6 +530,12 @@
       "date": "2026-10-18T09:54:14.594Z",
       "format": "question",
       "sujet": "Faut-il payer l'abonnement ChatGPT pour développer son petit commerce ?",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-18T16:06:57.187Z",
+      "format": "etapes",
+      "sujet": "Créer une affiche promotionnelle nette pour statut WhatsApp en trois étapes avec l'IA et Canva",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
