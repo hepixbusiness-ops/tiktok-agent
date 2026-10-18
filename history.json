@@ -155,6 +155,12 @@
       "format": "question",
       "sujet": "Est-ce utile d'avoir un site web si tous ses clients commandent déjà sur WhatsApp ?",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
+    },
+    {
+      "date": "2026-10-18T09:52:47.881Z",
+      "format": "liste",
+      "sujet": "Quatre éléments indispensables sur le site web d'un restaurant au Cameroun pour rassurer les clients",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-web)"
     }
   ],
   "prordv-pro": [
@@ -347,6 +353,13 @@
       "sujet": "Trois atouts indispensables pour développer les réservations de son établissement",
       "publication": "arrive-inbox : notification envoyée sur le compte",
       "publish_id": "v_inbox_file~v2.7697755734569748501"
+    },
+    {
+      "date": "2026-10-18T09:59:18.958Z",
+      "format": "liste",
+      "sujet": "Trois outils indispensables pour moderniser la prise de rendez-vous de son établissement",
+      "publication": "arrive-inbox : notification envoyée sur le compte",
+      "publish_id": "v_inbox_file~v2.7697944895834769409"
     }
   ],
   "happi-ia": [
@@ -498,6 +511,12 @@
       "date": "2026-10-17T21:41:43.960Z",
       "format": "question",
       "sujet": "L'IA peut-elle vraiment trouver des clients à la place d'un petit commerçant ?",
+      "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
+    },
+    {
+      "date": "2026-10-18T09:54:14.594Z",
+      "format": "question",
+      "sujet": "Faut-il payer l'abonnement ChatGPT pour développer son petit commerce ?",
       "publication": "non publiée : compte non connecté (lance node auth.js pour happi-ia)"
     }
   ],
